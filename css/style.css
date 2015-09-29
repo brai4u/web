@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#header{
+  position: fixed;
+  width: 100%;
+  height: 64px;
+  border-bottom: 2px solid black;
+  background-color: white;
+  z-index: 1000;
+}
+
+#header > #logo{
+  position: absolute;
+  width:64px;
+  height: 64px;
+  left:10px;
+}
+
+#uno, #dos{
+  position:relative;
+  width: 100%;
+  height: 700px;
+}
+
+#uno{
+  background-color: rgb(75, 0, 115);
+}
+
+#dos{
+  background-color: rgb(37, 0, 143);
+}
