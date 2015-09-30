@@ -3,11 +3,17 @@
   padding: 0;
 }
 
+a, a:hover, a:visited{
+  color: none;
+  font-style: none;
+  text-decoration: none;
+}
+
 #header{
   position: fixed;
   width: 100%;
   height: 64px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #2203A0;
   background-color: white;
   z-index: 1000;
 }
@@ -19,18 +25,76 @@
   left:10px;
 }
 
-#uno, #dos{
+#top-right{
   position:relative;
-  width: 100%;
-  height: 700px;
+  width: 320px;
+  height: 50px;
+  float: right;
+  bottom: 11px;
+  right: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.07);
 }
 
-#uno{
-  top: 66px;
-  color:white;
-  background-color: rgb(75, 0, 115);
+#searchbox{
+  position:relative;
+  float: right;
+  width: 150px;
+  height: 32px;
+  top: 10px;
+  right: 10px;
+  overflow: hidden;
 }
 
-#dos{
-  background-color: rgb(37, 0, 143);
+#buscador{
+  position:absolute;
+  width: 140px;
+  height: 22px;
+  padding:5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+#search{
+  position: absolute;
+  float: right;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  right: 0;
+  border:none;
+  color: none;
+  background-color: #FFF;
+  background-image: url(../img/search_btn.png);
+  z-index: 2;
+}
+
+.redes{
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.fa-twitter{
+  color: #55ACEE;
+}
+
+.fa-facebook{
+  color: #43609C;
+}
+
+.fa-youtube{
+  color: #CC181E;
+}
+
+#content{
+  position: relative;
+  top: 67px;
+}
+
+#footer{
+  position: absolute;
+  bottom: 0;
 }
