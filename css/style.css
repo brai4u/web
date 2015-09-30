@@ -26,11 +26,11 @@ a, a:hover, a:visited{
 }
 
 #top-right{
-  position:relative;
+  position:absolute;
   width: 320px;
   height: 50px;
   float: right;
-  bottom: 11px;
+  bottom: 7px;
   right: 10px;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.07);
@@ -71,6 +71,16 @@ a, a:hover, a:visited{
   z-index: 2;
 }
 
+#navbar{
+  position:absolute;
+  top: 20px;
+  left: 270px;
+  width: 650px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
 .redes{
   display: inline-block;
   padding-top: 10px;
@@ -90,11 +100,56 @@ a, a:hover, a:visited{
 }
 
 #content{
-  position: relative;
+  position: absolute;
   top: 67px;
 }
 
 #footer{
   position: absolute;
+  width: 100%;
+  height: 110px;
   bottom: 0;
+  border-top: 2px solid #2203A0;
+}
+
+#tv{
+  position: absolute;
+  top:10px;
+  left: 120px;
+}
+
+.patrocinador{
+  position: relative;
+  display: inline-block;
+  padding-left: 50px;
+
+}
+
+#redes_sociales{
+  position: absolute;
+  float: right;
+  top: 10px;
+  right: 120px;
+}
+
+.red{
+  position:relative;
+  display: inline-block;
+  padding-right: 30px;
+}
+
+div#redes_sociales i{
+  color: rgba(0, 0, 0, 0.12)
+}
+
+div#redes_sociales i.fa-twitter:hover{
+  color: #55ACEE;
+}
+
+div#redes_sociales i.fa-facebook:hover{
+  color: #43609C;
+}
+
+div#redes_sociales i.fa-youtube:hover{
+  color: #CC181E;
 }
