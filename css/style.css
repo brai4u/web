@@ -1,9 +1,54 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,100,300,500,700);
 
-*{
-  margin: 0;
-  padding: 0;
+/* CSS RESET*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS RESET */
+
+html{
   font-family: Roboto;
 }
 
@@ -13,65 +58,18 @@ a, a:hover, a:visited{
 }
 
 #header{
-  position: fixed;
+  position fixed;
   width: 100%;
   height: 64px;
-  border-bottom: 2px solid #2203A0;
   background-color: white;
+  border-bottom: 2px solid #2203A0;
   z-index: 1000;
 }
 
-#header > #logo{
+#header #logo{
   position: absolute;
-  width:64px;
-  height: 64px;
-  left: 1.5%;
-}
-
-#top-right{
-  position:absolute;
-  width: 320px;
-  height: 50px;
-  float: right;
-  bottom: 7px;
-  right: 10px;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.07);
-}
-
-#searchbox{
-  position:relative;
-  float: right;
-  width: 150px;
-  height: 32px;
-  top: 10px;
-  right: 10px;
-  overflow: hidden;
-}
-
-#buscador{
-  position:absolute;
-  width: 140px;
-  height: 22px;
-  padding:5px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  z-index: 1;
-}
-
-#search{
-  position: absolute;
-  float: right;
-  width: 32px;
-  height: 32px;
-  top: 0;
-  right: 0;
-  border:none;
-  color: none;
-  background-color: #FFF;
-  background-image: url(../img/search_btn.png);
-  z-index: 2;
+  margin-left: 1.5%;
+  float: left;
 }
 
 #navbar{
@@ -86,24 +84,40 @@ a, a:hover, a:visited{
   border-bottom: 1px;
 }
 
-ul li{
+#navbar ul li{
   display: block;
   float: left;
-  width: 20%;
+  padding-left :40px;
+  text-align: center;
 }
 
-ul li:hover{
-  padding-bottom: 3px;
-  border-bottom: 2px solid;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+#navbar a{
+  padding: 5px 5px 5px 5px;
 }
 
-#icono{
+#navbar a:hover{
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+#navbar #icono{
   position: absolute;
   padding-top: 5px;
   padding-left: 5px;
   font-size: 0.8em;
+}
+
+
+#top-right{
+  position: relative;
+  display: block;
+  float: right;
+  top: 7px;
+  right: 10px;
+  width: 320px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.07);
 }
 
 .redes{
@@ -124,29 +138,104 @@ ul li:hover{
   color: #CC181E;
 }
 
-#main{
-  position: absolute;
-  background-color: black;
-  width: 100%;
-  top: 66px;
+#searchbox{
+  position: relative;
+  float: right;
+  right: 10px;
+  top: 10px;
+
+}
+
+#searchbox input{
+  float: left;
+}
+
+#buscador{
+  width: 108px;
+  height: 22px;
+  padding:5px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+}
+
+#search{
+  width: 32px;
+  height: 32px;
+  right:-32px;
+  border:none;
+  background-color: #FFF;
+  background-image: url(../img/search_btn.png);
 }
 
 .fotos{
-  position: relative;
-  display: block;
   float: left;
-  width: 219px;
+  width: 16.36%;
   height: 219px;
   border: 2px solid black;
-  left: 12px;
-  background-image: url(../img/prueba.png);
   overflow: hidden;
+}
+
+#contenedor_fotos{
+  width: 100%;
+  height: 446px;
+  overflow: hidden;
+}
+
+#uno{
+  background-image: url(../img/uno.png);
+}
+
+#dos{
+  background-image: url(../img/dos.png);
+}
+
+#tres{
+  background-image: url(../img/tres.png);
+}
+
+#cuatro{
+  background-image: url(../img/cuatro.png);
+}
+
+#cinco{
+  background-image: url(../img/cinco.png);
+}
+
+#seis{
+  background-image: url(../img/seis.png);
+}
+
+#siete{
+  background-image: url(../img/siete.png);
+}
+
+#ocho{
+  background-image: url(../img/ocho.png);
+}
+
+#nueve{
+  background-image: url(../img/nueve.png);
+}
+
+#diez{
+  background-image: url(../img/diez.png);
+}
+
+#once{
+  background-image: url(../img/once.png);
+}
+
+#doce{
+  background-image: url(../img/doce.png);
 }
 
 #overlay{
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 446px;
+  top:66px;
   background-color: rgba(255, 255, 255, 0.62);
 }
 
@@ -166,59 +255,51 @@ ul li:hover{
   font-size: 1.2em;
 }
 
-#prueba{
-  width: 100%;
-  height: 300px;
-  bottom: -300px;
-}
+
+
+
+
+
+
 
 #footer{
-  position: absolute;
-  background-color: white;
   width: 100%;
-  height: 110px;
-  bottom: -412px;
+  height: 100px;
   border-top: 2px solid #2203A0;
 }
 
-#tv{
-  position: absolute;
-  top:10px;
-  left: 120px;
-}
-
-.patrocinador{
-  position: relative;
-  display: inline-block;
+#footer .patrocinador{
+  margin-top: 10px;
+  float: left;
   padding-left: 50px;
-
 }
 
-#redes_sociales{
-  position: absolute;
+#footer .redes{
+  margin-top: 10px;
   float: right;
-  top: 10px;
-  right: 120px;
-}
-
-.red{
-  position:relative;
-  display: inline-block;
   padding-right: 30px;
 }
 
-div#redes_sociales i{
+#footer #kapow{
+  padding-left: 150px;
+}
+
+#footer #youtube{
+  padding-right: 150px;
+}
+
+#footer div.redes i{
   color: rgba(0, 0, 0, 0.12)
 }
 
-div#redes_sociales i.fa-twitter:hover{
+#footer div.redes i.fa-twitter:hover{
   color: #55ACEE;
 }
 
-div#redes_sociales i.fa-facebook:hover{
+#footer div.redes i.fa-facebook:hover{
   color: #43609C;
 }
 
-div#redes_sociales i.fa-youtube:hover{
+#footer div.redes i.fa-youtube:hover{
   color: #CC181E;
 }
