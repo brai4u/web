@@ -97,7 +97,7 @@ a, a:hover, a:visited{
 
 #navbar a:hover{
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.07);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 #navbar #icono{
@@ -139,7 +139,7 @@ a, a:hover, a:visited{
 }
 
 #searchbox{
-  position: relative;
+  position: absolute;
   float: right;
   right: 10px;
   top: 10px;
