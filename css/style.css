@@ -166,12 +166,18 @@ ul li:hover{
   font-size: 1.2em;
 }
 
+#prueba{
+  width: 100%;
+  height: 300px;
+  bottom: -300px;
+}
+
 #footer{
   position: absolute;
   background-color: white;
   width: 100%;
   height: 110px;
-  bottom: -112px;
+  bottom: -412px;
   border-top: 2px solid #2203A0;
 }
 
