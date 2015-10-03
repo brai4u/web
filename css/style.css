@@ -185,7 +185,7 @@ a, a:hover, a:visited{
 #contenedor_fotos{
   /*position: relative;*/
   width: 100%;
-  height: 446px;
+  height: 223px;
   top: 66px;
   overflow: hidden;
 }
@@ -241,7 +241,7 @@ a, a:hover, a:visited{
 #overlay{
   position: absolute;
   width: 100%;
-  height: 446px;
+  height: 223px;
   background-color: rgba(255, 255, 255, 0.62);
 }
 
@@ -257,10 +257,48 @@ a, a:hover, a:visited{
 }
 
 #intro{
-  margin-top: 35px;
+  position: relative;
+  width: 45%;
+  margin: 0 auto;
+  top: 35px;
   font-size: 1.2em;
+  font-weight: 500;
 }
 
+#contenedor_conductores{
+  width: 1100px;
+  height: 272px;
+  margin: 0 auto;
+}
+
+.conductores{
+  float: left;
+  width: 220px;
+  height: 250px;
+  margin-top: 10px;
+  margin-left: 43px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.foto_conductor{
+  height: 100px;
+}
+
+.foto_conductor img{
+  border-radius: 50%;
+}
+
+.nombre_conductor{
+  height: 20px;
+  padding: 15px;
+  color: #104F69;
+  font-weight: bold;
+}
+
+.descripcion_conductor{
+  height: 100px;
+}
 
 
 
